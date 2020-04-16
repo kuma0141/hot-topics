@@ -1,0 +1,466 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  padding: 5px 20px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+.logo {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.logo a img {
+  width: 60px;
+}
+.menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+
+.logo a {
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle {
+  order: 1;
+}
+.item {
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+  order: 3;
+  border-radius: 10px;
+}
+.back-gold {
+  background-color: #faca2a;
+}
+.item.active {
+  display: block;
+}
+
+header {
+  height: 300px;
+  width: 100%;
+  background-image: url("./../img/golden-3346988_1920.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+}
+
+header h1.big-head {
+  display: none;
+}
+
+.menu li.logo {
+  padding-bottom: 0px;
+}
+
+.menu li.item.hide-text {
+  padding: 0px;
+}
+
+.menu li.item.hide-text a h1 {
+  font-size: 25px;
+}
+
+footer {
+  background-color: #d8a828;
+}
+
+footer h1 {
+  text-align: center;
+  padding: 20px 0px;
+  font-size: large;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container > div {
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.social .social-item {
+  display: inline;
+  margin: 0 auto;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-linkedin-square {
+  color: #0e76a8;
+}
+
+.fa-twitter-square {
+  color: #00acee;
+}
+
+.fa-google-plus-square {
+  color: #db4a39;
+}
+
+.clear {
+  clear: both;
+}
+
+.row {
+  margin: 0 auto;
+}
+
+.row h2 {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.left,
+.right,
+.right1 {
+  width: 90%;
+  margin: 0 auto;
+  float: none;
+  text-align: center;
+}
+
+.left img {
+  width: 90%;
+}
+
+.right p,
+.right1 p {
+  font-weight: bold;
+  text-align: justify;
+}
+
+hr {
+  margin: 15px auto;
+  border-width: 1px !important;
+  width: 90%;
+}
+
+/******* Portfolio ***********/
+.head {
+  margin: 60px auto;
+}
+.head h1 {
+  font-size: 25px;
+  text-align: center;
+}
+.portfolio-row {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.portfolio-row figure {
+  text-align: center;
+}
+.portfolio-row figure img {
+  width: 55%;
+}
+figure figcaption {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 80rem) and (min-width: 35rem) {
+  p {
+    font-size: 1rem;
+  }
+  a {
+    font-size: 23px;
+  }
+  header {
+    height: 350px;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+  .menu li.item.hide-text a h1 {
+    font-size: 35px;
+  }
+  .logo {
+    flex: 1;
+  }
+  .logo a img {
+    width: 120px;
+  }
+  .back-gold.item {
+    display: block;
+    width: 40%;
+  }
+  .menu li.logo {
+    padding-bottom: 10px;
+  }
+  .menu li.item.hide-text {
+    padding: 15px;
+  }
+
+  .menu li.item.hide-text a h1 {
+    font-size: 35px;
+  }
+  .flex-container {
+    flex-direction: row;
+  }
+  .flex-container > div {
+    margin-left: 25px;
+    line-height: 1.4;
+  }
+
+  .flex-container > div > h3 {
+    font-size: 23px;
+  }
+  .flex-container > div > h4 {
+    font-size: 19px;
+  }
+  footer h1 {
+   
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 26px;
+  }
+  .social .social-item .fa {
+    font-size: 30px;
+    width: 8%;
+  }
+
+  /******* Home ***********/
+  .container {
+    margin: 20px 10%;
+    text-align: center;
+  }
+  .row {
+    margin-top: 100px;
+  }
+  .row h2 {
+    padding-bottom: 20px;
+  }
+  .left {
+    width: 40%;
+    float: left;
+    text-align: left;
+  }
+  .left img {
+    width: 90%;
+    min-height: 100%; 
+  }
+  .right {
+    width: 60%;
+    float: right;
+  }
+  .right1 {
+    width: 100%;
+    float: none;
+  }
+  .right p,
+  .right1 p {
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 25px;
+  }
+  hr {
+    margin: 20px auto;
+  }
+
+  /******* Portfolio ***********/
+  .head {
+    margin: 75px auto;
+  }
+  .head h1 {
+    font-size: 40px;
+  }
+  .portfolio-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .portfolio-row figure {
+    flex-basis: 50% !important;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  .portfolio-row figure img {
+    width: 60%;
+  }
+  figure figcaption {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 80rem) {
+  p {
+    font-size: 1.25rem;
+  }
+  a {
+    font-size: 25px;
+  }
+  header {
+    height: 400px;
+    background-size: contain;
+    background-attachment: none;
+    background-position: top;
+  }
+  .menu {
+    margin: 60px;
+    vertical-align: middle;
+  }
+
+  .logo a img {
+    width: 150px;
+  }
+
+  .item {
+    display: block;
+    order: 1;
+    width: 33%;
+    margin: 0px auto;
+  }
+  .toggle {
+    display: none;
+  }
+  .logo {
+    order: 0;
+    margin: 0 auto;
+    width: auto;
+  }
+  .menu li {
+    padding: 15px 10px;
+  }
+  .hide-text {
+    display: none;
+  }
+  header h1.big-head {
+    display: block;
+    font-size: 50px;
+  }
+  .flex-container {
+    flex-direction: row;
+  }
+  .flex-container > div {
+    width: 100%;
+    margin-left: 25px;
+    line-height: 1.5;
+  }
+  .flex-container > div > h3 {
+    font-size: 30px;
+  }
+  .flex-container > div > h4 {
+    font-size: 26px;
+  }
+  footer h1 {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 35px;
+  }
+  .social .social-item .fa {
+    font-size: 40px;
+    width: 10%;
+  }
+  /******* Home ***********/
+  .container {
+    margin: 20px 10%;
+    text-align: center;
+  }
+  .row {
+    margin-top: 100px;
+  }
+  .row h2 {
+    padding-bottom: 20px;
+  }
+  .left {
+    width: 30%;
+    float: left;
+    text-align: left;
+  }
+  .left img {
+    width: 90%;
+    min-height: 100%; 
+  }
+  .right,
+  .right1 {
+    width: 70%;
+    float: right;
+  }
+  .right p,
+  .right1 p {
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 25px;
+  }
+  hr {
+    margin: 25px auto;
+  }
+  /******* Portfolio ***********/
+  .head {
+    margin: 90px auto;
+  }
+  .head h1 {
+    font-size: 50px;
+  }
+  .portfolio-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .portfolio-row figure {
+    flex-basis: 33% !important;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  .portfolio-row figure img {
+    width: 60%;
+  }
+  figure figcaption {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 50px;
+  }
+}
